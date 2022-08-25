@@ -1,3 +1,4 @@
+#! usr/bin/python
 import random
 from time import localtime
 from requests import get, post
