@@ -47,6 +47,4 @@ jobs:
     
     - name: Test with pytest
       run: |
-        sudo cp -p ./chromedriver /usr/bin
-        chmod -R 777 /usr/bin/chromedriver
-        python ./main.py
+        python main.py
