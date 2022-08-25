@@ -50,4 +50,5 @@ jobs:
     
     - name: Run Work
       run: |
+        cd wechat
         python main.py
