@@ -8,6 +8,9 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+    
+  schedule:
+    - cron: "0 0 * * *"
 
 permissions:
   contents: read
@@ -45,7 +48,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install zhdate
     
-    - name: Test with pytest
+    - name: Run Work
       run: |
-        cd Haley_daily2
         python main.py
